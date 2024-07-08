@@ -2,6 +2,7 @@
 
 require_once("./config/Enrutador.php");
 require_once("./controllers/clientectr.php");
+require_once("./controllers/habitaciones.php");
 ?>
 
 
@@ -28,6 +29,7 @@ require_once("./controllers/clientectr.php");
             echo "Me carga el index principal<br>";
     ?>
         <a href="index.php?vista=cliente/inicio">Lista de Clientes</a>
+        <a href="index.php?vista=habitaciones/inicio">Lista de habitaciones</a>
         <?php
         }
    ?>
