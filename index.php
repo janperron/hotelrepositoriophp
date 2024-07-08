@@ -1,7 +1,7 @@
 <?php
-
 require_once("./config/Enrutador.php");
 require_once("./controllers/clientectr.php");
+require_once("./controllers/pagoctr.php");
 ?>
 
 
@@ -28,6 +28,8 @@ require_once("./controllers/clientectr.php");
             echo "Me carga el index principal<br>";
     ?>
         <a href="index.php?vista=cliente/inicio">Lista de Clientes</a>
+        <br>
+        <a href="index.php?vista=pago/inicio">Lista de Pago</a>
         <?php
         }
    ?>
