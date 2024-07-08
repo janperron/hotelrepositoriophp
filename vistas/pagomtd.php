@@ -1,29 +1,27 @@
 <?php
-$clientectr = new clienteController();
-$listadoClientes = $clienteController->listar();
+$pagoctr = new pagoController();
+$listadodePagos= $pagoController->listar();
 
 ?>
-<h3>Listado de clientes</h3>
+<h3>Listado de pagos</h3>
 <table border="1">
     <thead>
         <tr>
             <th>id</th>
-            <th>nombre</th>
-            <th>apellido</th>
-            <th>correo</th>
-            <th>telefono</th>
-            <th>fecha llegada</th>
-            <th>fecha salida</th>
-            <th><a href="?vista=cliente/crear" class="btn-floating green btn-small"><i
+            <th>reserva_id</th>
+            <th>monto</th>
+            <th>fecha_pago</th>
+
+            <th><a href="?vista=pago/crear" class="btn-floating green btn-small"><i
                         class="material-icons">add</i></a></th>
         </tr>
     </thead>
     <tbody>
 
-        <?php for($i=0; $i < count($listadoClientes); $i++): ?>
+        <?php for($i=0; $i < count($listadodePagos); $i++): ?>
         <tr>
-            <?php for($j=0; $j < count($listadoClientes[$i]); $j++): ?>
-            <td><?php echo $listadoClientes[$i][$j];?></td>
+            <?php for($j=0; $j < count($listadodePagos[$i]); $j++): ?>
+            <td><?php echo $listadodePagos[$i][$j];?></td>
 
             <?php endfor?>
             <td><a href="" class="btn-floating blue btn-small"><i class="material-icons">visibility</i></a>

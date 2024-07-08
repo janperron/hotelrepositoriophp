@@ -17,7 +17,7 @@ class ClienteController{
 
     ///faltarian los otros metodos
 
-    public function crear($nombre, $apellido,$correo,$telefono,$fechallegada, $fechasalida,){
+    public function crear($nombre,$apellido,$correo,$telefono,$fechallegada,$fechasalida,){
         $this->cliente->setnombre($nombre);
         $this->cliente->setapellido($apellido);
         $this->cliente->setcorreo($correo);
