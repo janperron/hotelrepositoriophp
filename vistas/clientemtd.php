@@ -1,5 +1,5 @@
 <?php
-$clientectr = new ClienteCtr();
+$clientectr = new clienteController();
 $listadoClientes = $clienteController->listar();
 
 ?>
