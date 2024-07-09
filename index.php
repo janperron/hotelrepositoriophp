@@ -2,7 +2,6 @@
 
 require_once("./config/Enrutador.php");
 require_once("./controllers/clientectr.php");
-require_once("./controllers/servicios_reservas.php");
 ?>
 
 
@@ -29,7 +28,6 @@ require_once("./controllers/servicios_reservas.php");
             echo "Me carga el index principal<br>";
     ?>
         <a href="index.php?vista=cliente/inicio">Lista de Clientes</a>
-        <a href="index.php?vista=servicio_reserva/inicio">servicios_reserva</a>
         <?php
         }
    ?>
