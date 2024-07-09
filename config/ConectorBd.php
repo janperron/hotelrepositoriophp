@@ -6,7 +6,7 @@ class ConectorBd{
     private $servidor="localhost";//127.0.0.1
     private $usuarioBd="root";
     private $claveBd="";
-    private $baseDatos="cambulos";
+    private $baseDatos="cambulos_proyecto";
     //
     private $conexion;//guardar la conexion
 
@@ -19,6 +19,7 @@ class ConectorBd{
        }
        
     }
+
     public function consultaSinRetorno($cadenaSql)//insert delete update
     {
         $this->conexion->query($cadenaSql);
