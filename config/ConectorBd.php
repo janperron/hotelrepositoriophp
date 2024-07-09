@@ -19,7 +19,6 @@ class ConectorBd{
        }
        
     }
-
     public function consultaSinRetorno($cadenaSql)//insert delete update
     {
         $this->conexion->query($cadenaSql);
